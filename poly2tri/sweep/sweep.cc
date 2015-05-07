@@ -756,7 +756,7 @@ Point& Sweep::NextFlipPoint(Point& ep, Point& eq, Triangle& ot, Point& op)
     // Left
     return *ot.PointCW(op);
   }
-  throw std::runtime_error("[Unsupported] Opposing point on constrained edge");
+  //throw std::runtime_error("[Unsupported] Opposing point on constrained edge");
 }
 
 void Sweep::FlipScanEdgeEvent(SweepContext& tcx, Point& ep, Point& eq, Triangle& flip_triangle,
